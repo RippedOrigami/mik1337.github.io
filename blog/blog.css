@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 body {
   /* padding-top: 50px; */
@@ -8,6 +9,39 @@ body {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+}
+.video-embedd iframe {
+  width: 99vw;
+  height: 50vw;
+}
+.change-on-hover::  hover {
+  content: "tl;dw";
+}
+@keyframes bgColor {
+  0% {
+    /* static */
+    background-image: url(https://media.giphy.com/media/dwaeIbBnF6HBu/source.gif);
+  }
+  25% {
+    /* stars */
+    background-image: url(https://media.giphy.com/media/10X5oVBTgURLtC/giphy.gif);
+  }
+  50% {
+    /* flower */
+    background-image: url(https://media.giphy.com/media/wIGORG5is6V6o/giphy.gif);
+  }
+  75% {
+    /* umbrella */
+    background-image: url(https://media.giphy.com/media/49ojI6q5TWOQw/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    /* chick */
+    background-image: url(https://media.giphy.com/media/GGooDHKI1mrE4/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .highlight {
@@ -63,6 +97,34 @@ body {
 }
 .footer a:visited {
   text-decoration: underline;
+}
+
+.root {
+  animation: bgColor 10s infinite linear;
+  padding-top: 60px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.life {
+  /* background: ; */
+}
+.title {
+  font-style: oblique;
+  text-decoration: underline;
+}
+.hekkin-big {
+  font-weight: bold;
+  font-size: 11em;
+}
+.kinda-big {
+  font-weight: bold;
+  font-size: 4em;
+}
+.big {
+  font-weight: bold;
+  font-size: 1em !important;
 }
 
 .bg-mik {
